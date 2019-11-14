@@ -1,3 +1,43 @@
 * {
     box-sizing: border-box;
 }
+body {
+    margin: 0;
+}
+
+header {
+    background-color: pink;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.brand {
+    display: flex;
+    width: 100%;
+    height: 200px;
+}
+.brand-name {
+    font-family: 'Sacramento', cursive;
+    color: white;
+    font-size: 40px;
+    margin: 10px;
+}
+.brand-logo {
+    width: 120px;
+    height: 120px;
+}
+.nav-tools {
+    display: flex;
+    justify-content: flex-start;
+}
+.header-nav {
+    font-family: 'Oswald', cursive;
+    width: 50%;
+}
+.header-tools {
+    width: 50%;
+}
+li {
+    display: inline;
+}
