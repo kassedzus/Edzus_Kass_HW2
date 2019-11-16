@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: rgb(216, 137, 216);
+    background-color: rgb(111, 66, 111);
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-rows: 200px 50px;
@@ -47,18 +47,23 @@ header {
     padding: 0px 10px 0px 10px;
     font-size: 15px;
 }
+.navlist-item {
+    color: rgb(255, 220, 131);
+    text-decoration: none;
+    text-shadow: 2px 2px #ff0000;
+}
 
 
 /* section {
     background-color: rgb(216, 137, 216);
 } */
 .hero-feature {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(255, 220, 131);
     text-align: center; 
     margin: 10px 0px 0px 0px;
     padding: 10px;
-    background-color: rgb(216, 137, 216);
-    color: white;
+    background-color: rgb(111, 66, 111);
 }
 
 .skat-katalogu {
@@ -73,7 +78,7 @@ header {
     margin: 10px 0px 10px 0px;
     border: 5px;
     padding: 10px;
-    background-color: rgb(216, 137, 216);
+    background-color: rgb(111, 66, 111);
 }
 .button1 {
     background-color: rgb(253, 85, 103);
@@ -87,46 +92,65 @@ header {
     margin: 4px 2px;
     cursor: pointer;
   }
-  .button1:hover {
+.button1:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   }
-  .rekl1 {
+.rekl1 {
       width: 100%;
+      max-width: 600px;
       display: block;
       margin: auto;
       padding: 10px;
       border: 5px solid red;
   }
-  .article-feature {
-      font-family: 'Open Sans', sans-serif;
-      color: white;
+.feature {
+    text-transform: uppercase;
+    text-shadow: 2px 2px #ff0000;
+
   }
-  .article-listing {
-    font-family: 'Open Sans', sans-serif;
-    color: white;
+.article-feature {
+    font-family: 'Oswald', sans-serif;
+      color: rgb(255, 220, 131);
   }
-  main {
-      background-color: rgb(216, 137, 216);
+.article-listing {
+    font-family: 'Oswald', sans-serif;
+    color: rgb(255, 220, 131);
+  }
+main {
+      background-color: rgb(111, 66, 111);
       padding: 10px;
   }
-  footer {
+.sidebar {
+    background-color: rgb(111, 66, 111);
+    color: rgb(255, 220, 131);
+    font-family: 'Oswald', sans-serif;
+    padding: 20px;
+    margin-top: 10px;
+}
+.sidebar-name {
+    text-shadow: 2px 2px #ff0000;
+}
+footer {
       display: flex;
-      background-color: rgb(216, 137, 216);
+      background-color: rgb(111, 66, 111);
       color: white;
       padding: 10px;
       justify-content: space-between;
+      font-family: 'Oswald', sans-serif;
+      color: rgb(255, 220, 131);
+      align-items: center;
   }
-  .follow-logo {
+.follow-logo {
       width: 30px;
   }
-  
-
-@media screen and (min-width: 576px) {
-    .hero-feature {
-        display: none;
-    }
+.nepieciesams1 {
+    text-shadow: 2px 2px #ff0000;
+}
+.pagatavosana1 {
+    text-shadow: 2px 2px #ff0000;
 }
 
+  
 @media screen and (max-width: 575px) {
     .hero-feature {
         display: none;
@@ -162,4 +186,85 @@ header {
         text-align: center;
         padding: 20px 0px 0px 5px;
     }
+    .sidebar {
+        display: none;
+    }
+}
+
+/* @media screen and (min-width: 576px) {
+    .hero-feature {
+        display: none;
+    }
+    .sidebar {
+        display: none;
+    }
+    .navlist-item:hover {
+        text-shadow: 2px 2px 4px #000000;
+        color: rgb(253, 85, 103)
+    }
+
+} */
+
+
+
+@media screen and (min-width: 576px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .brand {
+        display: block;
+        padding: 10px;
+    }
+    .brand-logo {
+        display: block;
+        margin: auto;
+    } 
+    .brand-name {
+        width: auto;
+    }
+    .navlist-item:hover {
+        text-shadow: 2px 2px 4px #000000;
+        color: rgb(253, 85, 103)
+    }
+    .hero-feature {
+        display: block;
+        text-transform: uppercase;
+    }
+    .header-tools {
+        padding: 0px 15px 20px 0px;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 1fr 3fr;
+    }
+    .article-listing {
+        display: grid;
+        grid-column: 1/3;
+        grid-template-columns: 40% 60%;
+    }
+    .article-feature {
+        width: 100%;
+        padding: 10px
+    }
+    .rekl {
+        align-self: center;
+    }
+    .nepieciesams {
+        padding: 0px 10px 10px 10px;
+        border-right: 1px dashed rgb(255, 220, 131);
+    }
+    .pagatavosana {
+        padding: 0px 10px 10px 10px;
+    }
+    footer {
+        margin: 10px 0px 0px 0px;
+    }
+    .sidebar {
+        display: block;
+    }
+}
+@media screen and (min-width: 992px) {
+    
 }
