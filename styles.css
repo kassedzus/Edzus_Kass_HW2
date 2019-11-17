@@ -108,6 +108,12 @@ header {
     text-shadow: 2px 2px #ff0000;
 
   }
+.muffin_image {
+    max-width: 100%;
+}
+.lime-icecream {
+    max-width: 100%;
+}
 .article-feature {
     font-family: 'Oswald', sans-serif;
       color: rgb(255, 220, 131);
@@ -245,7 +251,7 @@ footer {
     main {
         display: grid;
         grid-template-columns: 60% 40%;
-        grid-template-rows: 1fr 3fr;
+        grid-template-rows: max-content;
     }
     .article-listing {
         display: grid;
