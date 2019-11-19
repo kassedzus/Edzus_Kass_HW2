@@ -311,23 +311,25 @@ footer {
         grid-column: 1/2;
         grid-row: 1/3;
         padding: 0px 0px 0px 10px;
-        border-top: 2px dashed rgb(255, 220, 131);
+        /* border-top: 2px dashed rgb(255, 220, 131);
         border-left: 2px dashed rgb(255, 220, 131);
-        border-bottom: 2px dashed rgb(255, 220, 131);
+        border-bottom: 2px dashed rgb(255, 220, 131); */
     }
     .article-listing {
         grid-column: 2/3;
         grid-row: 1/3;
         padding: 0;
         margin-right: 10px;
-        border-top: 2px dashed rgb(255, 220, 131);
+        /* border-top: 2px dashed rgb(255, 220, 131);
         border-right: 2px dashed rgb(255, 220, 131);
-        border-bottom: 2px dashed rgb(255, 220, 131);
+        border-bottom: 2px dashed rgb(255, 220, 131); */
     }
     .sidebar {
         grid-column: 3/4;
         grid-row: 1/3;
-        padding: 0;
+        align-items: ;
+        padding: 10px;
         margin: 0;
+        border: 2px dashed rgb(255, 220, 131);
     }
 }
